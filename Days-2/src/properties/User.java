@@ -5,6 +5,8 @@ public class User {
     private int id;
     private String name;
     private String surname;
+    private String[] pictures;
+    private Address address;
 
     public int getId() {
         return id;
@@ -28,5 +30,21 @@ public class User {
 
     public void setSurname(String surname) {
         this.surname = surname;
+    }
+
+    public String[] getPictures() {
+        return pictures;
+    }
+
+    public void setPictures(String[] pictures) {
+        this.pictures = pictures;
+    }
+
+    public Address getAddress() {
+        return address;
+    }
+
+    public void setAddress(Address address) {
+        this.address = address;
     }
 }
