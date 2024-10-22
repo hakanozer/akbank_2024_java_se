@@ -23,6 +23,22 @@ public class MainApp {
         Action action2 = new Action();
         System.out.println( action2.number );
 
+        // Fnc Call
+        action.noParameter();
+        action.sum(600,788);
+        action.sum(45,66);
+
+        boolean loginStatus = action.userLogin("ali01", "12345");
+        System.out.println("loginStatus: " + loginStatus);
+
+        action.addAddress(100,"Line-1","Line-2","Line-3","Line-4");
+
+        String[] cities = {"İstanbul", "Ankara", "Bursa", "Adana"};
+        cities = action.cities(cities);
+        for (String city : cities) {
+            System.out.println(city);
+        }
+
     }
 
 }
