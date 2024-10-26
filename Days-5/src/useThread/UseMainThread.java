@@ -8,6 +8,5 @@ public class UseMainThread {
 
         System.out.println("this line call");
 
-
     }
 }
